@@ -7,8 +7,7 @@
 		},
 		"parameters": {
 			"filename": {
-				"type": "string",
-				"defaultValue": "car.csv"
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -16,7 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "cars.csv",
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
 				"container": "input"
 			},
 			"columnDelimiter": ",",
