@@ -5,13 +5,18 @@
 			"referenceName": "lsStorage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "cars.csv",
-				"container": "input"
+				"container": "mdcontainerapr21"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
