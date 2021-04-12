@@ -15,11 +15,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().filename",
-					"type": "Expression"
-				},
-				"container": "input"
+				"fileName": "cars.csv",
+				"container": "mdcontainerapr21"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
