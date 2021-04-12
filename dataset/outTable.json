@@ -5,6 +5,12 @@
 			"referenceName": "lsSQL",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"tablename": {
+				"type": "string",
+				"defaultValue": "Cars"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
